@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 import pandas as pd
 
+st.set_page_config(page_title="HTTP Status Checker", layout="wide")
+
 st.markdown("""
     <style>
     div.stButton > button {
@@ -20,7 +22,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.set_page_config(page_title="HTTP Status Checker", layout="wide")
 st.title("HTTP Status Checker")
 
 st.markdown("Prüfe den HTTP-Status deiner URL – entweder einzeln oder für mehrere Seiten gleichzeitig.")
