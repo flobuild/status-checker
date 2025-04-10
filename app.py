@@ -2,6 +2,24 @@ import streamlit as st
 import requests
 import pandas as pd
 
+st.markdown("""
+    <style>
+    div.stButton > button {
+        background-color: #7B3F99;
+        color: white;
+        border: none;
+        padding: 0.6em 1.2em;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+    div.stButton > button:hover {
+        background-color: #662D91;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.set_page_config(page_title="HTTP Status Checker", layout="wide")
 st.title("HTTP Status Checker")
 
